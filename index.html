@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <style>
+        body {
+            background-color: rgb(229, 229, 229);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            margin: 0;
+        }
+
+        #print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            height: 50px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media print {
+            #print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="m. Abdullah.png" alt="CV Image" style="max-width: 100%; height: auto;">
+    <button id="print-btn" onclick="window.print()">Print</button>
+</body>
+</html>
